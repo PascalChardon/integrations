@@ -2947,7 +2947,7 @@ processors:
       	dup12,
       ]));
       
-      var part3 = match("MESSAGE#19:GET:01", "nwparser.payload", "%{event_time_string}.%{fld20->} %{duration->} %{saddr->} %{action}/%{resultcode->} %{sbytes->} %{web_method->} %{url->} %{username->} %{h_code}/%{daddr->} %{content_type}", processor_chain([
+      var part3 = match("MESSAGE#19:GET:01", "nwparser.payload", "%{event_time_string}.%{fld20->} %{duration->} %{saddr->} %{action}/%{resultcode->} %{sbytes->} %{rbytes->} %{web_method->} %{url->} %{username->} %{h_code}/%{daddr->} %{content_type}", processor_chain([
       	dup1,
       	dup2,
       	dup3,
